@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunita Sharma | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔐 Sunita Sharma</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="content">
+      <h1>Hi, I'm Sunita Sharma 👋</h1>
+      <p>
+        I'm a Cybersecurity QA Engineer and Blue Team practitioner with 15+ years of software QA experience and 4+ years of hands-on SOC and incident response skills.
+      </p>
+      <p>
+        I recently completed a 30-Day SOC Analyst Challenge to demonstrate practical skills in log analysis, threat detection, and endpoint monitoring using tools like Splunk, Wazuh, Suricata, and Wireshark.
+      </p>
+      <p>
+        I thrive in dynamic, collaborative environments and am skilled at applying Agile principles to streamline processes and deliver results on time. With certifications as a ScrumMaster and Agile Certified Practitioner (PMI-ACP), I bring a strategic mindset and technical proficiency to every project.
+      </p>
+      <p>
+        I'm currently exploring opportunities in:
+        <ul class="career-tags">
+          <li>🔍 Cybersecurity Analyst</li>
+          <li>🛡️ SOC Analyst (Blue Team)</li>
+          <li>✅ Security QA Engineer</li>
+          <li>🚨 Incident Response Specialist</li>
+        </ul>
+      </p>
+      <a href="#projects" class="btn-primary">Let's Git it!</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="tags">
+      <span class="tag">SIEM</span>
+      <span class="tag">EDR</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Windows</span>
+      <span class="tag">Phishing</span>
+      <span class="tag">Network</span>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Log Analysis (Days 1-5)</h3>
+        <p>Linux & Windows log parsing and analysis.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/1-Log-Analysis" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Network Traffic (Days 6-10)</h3>
+        <p>Wireshark, TCP, ICMP, TLS inspection.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/2-Network-Traffic-Analysis" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Incident Response (Days 11-15)</h3>
+        <p>Phishing, brute-force, and malware containment.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/3-Incident-Response" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Splunk (Days 16-20)</h3>
+        <p>SPL queries and Zeek log ingestion.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/4-Splunk" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Threat Intel & Forensics (Days 21-25)</h3>
+        <p>Phishing, malware, header analysis.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/5-Threat-Intel-Forensics" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Wazuh EDR (Days 26-30)</h3>
+        <p>EDR setup, FIM, Suricata, vulnerability detection.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/6-Wazuh-Endpoint-Detection" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>🔧 15+ years in QA, 2+ years hands-on in Cybersecurity & SOC Blue Team practices.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Incident Response & Containment</li>
+      <li>SIEM (Splunk, Wazuh)</li>
+      <li>Endpoint Monitoring (FIM, Suricata)</li>
+      <li>Threat Intel Tools (VirusTotal, URLScan, AbuseIPDB)</li>
+      <li>Linux, Windows Server, Wireshark</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>
+      "Sunita is a proactive cybersecurity learner, collaborative, and committed to excellence."
+      <footer>— LinkedIn Peer Recommendation</footer>
+    </blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: sunitanigam@yahoo.com</p>
+    <p>🔗 <a href="https://linkedin.com/in/sunitanigam-sharma">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunita Sharma | Built with 💻 and ☕</p>
+  </footer>
+</body>
+</html>
