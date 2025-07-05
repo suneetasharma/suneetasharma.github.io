@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunita Sharma | Cybersecurity Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #ffffff;
-      color: #333;
+      padding: 0;
+      background-color: #f5f5f5;
     }
     header {
-      background-color: #7e57c2;
+      background-color: #673ab7;
       color: white;
-      padding: 1rem 2rem;
+      padding: 20px 0;
       text-align: center;
     }
     nav {
-      background-color: #eee;
-      padding: 0.5rem 2rem;
+      background-color: #512da8;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      padding: 10px 0;
     }
     nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    h2 {
-      color: #7e57c2;
-      border-bottom: 2px solid gold;
-      padding-bottom: 0.5rem;
+    h1, h2 {
+      color: #333;
     }
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      background-color: #fafafa;
-      margin-top: 1rem;
-    }
-    .btn {
+    .btn-primary {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem 0.25rem 0 0;
-      background-color: #7e57c2;
-      color: white;
+      background-color: #ffeb3b;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 4px;
+    }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .tag {
+      background-color: #e0e0e0;
+      padding: 8px 16px;
+      border-radius: 20px;
       font-size: 0.9rem;
     }
-    .contact-links a {
-      color: #7e57c2;
-      margin-right: 10px;
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .btn-secondary {
+      display: inline-block;
+      background-color: #673ab7;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 6px;
     }
     footer {
+      background-color: #ede7f6;
       text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-      font-size: 0.85rem;
-      color: #777;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
@@ -74,46 +100,99 @@
     <h1>Sunita Sharma</h1>
     <p>Cybersecurity QA Engineer | SOC Analyst in Training</p>
   </header>
+
   <nav>
-    <a href="#about">About</a>
+    <a href="#home">Home</a>
     <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a cybersecurity enthusiast with strong QA background, hands-on SOC experience, and a passion for blue-team defense. I recently completed a 30-Day SOC Analyst Challenge and actively build home labs using Wazuh, Suricata, Splunk and more.</p>
+  <section id="home">
+    <h2>Welcome to My Cybersecurity Portfolio</h2>
+    <p>Hands-on labs in Threat Detection | Log Analysis | EDR | SIEM | Incident Response</p>
+    <a href="#projects" class="btn-primary">Let's Git it!</a>
   </section>
 
   <section id="projects">
-    <h2>Highlighted Projects</h2>
-    <div class="project-card">
-      <h3>🔒 SOC Analyst 30-Day Challenge</h3>
-      <p>A comprehensive hands-on series covering log analysis, threat detection, IR, and EDR using tools like Wazuh, Splunk, and Suricata.</p>
-      <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge" class="btn">View on GitHub →</a>
+    <h2>My Projects</h2>
+    <div class="project-tags">
+      <span class="tag">SIEM</span>
+      <span class="tag">EDR</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Windows</span>
+      <span class="tag">Phishing</span>
+      <span class="tag">Incident Response</span>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Log Analysis (Days 1–5)</h3>
+        <p>Linux & Windows log analysis with PowerShell and UFW logs.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/1-Log-Analysis" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Network Traffic Analysis (Days 6–10)</h3>
+        <p>Wireshark & TCP/IP-based threat detection.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/2-Network-Traffic-Analysis" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Incident Response (Days 11–15)</h3>
+        <p>Linux and Windows brute-force detection and response.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/3-Incident-Response" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Splunk Log Analysis (Days 16–20)</h3>
+        <p>Splunk dashboards and log correlation using SPL.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/4-Splunk" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Threat Intel & Forensics (Days 21–25)</h3>
+        <p>Phishing email analysis, malware sandboxing, memory forensics.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/5-Threat-Intel-Forensics" class="btn-secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Wazuh EDR & Suricata (Days 26–30)</h3>
+        <p>File integrity, vulnerability detection, brute-force & port scan alerts.</p>
+        <a href="https://github.com/suneetasharma/SOC-Hands-On-Challenge/tree/main/6-Wazuh-Endpoint-Detection" class="btn-secondary">GitHub</a>
+      </div>
     </div>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Download my resume versions here:</p>
-    <a href="#" class="btn">Cybersecurity Resume (PDF)</a>
-    <a href="#" class="btn">QA Resume (PDF)</a>
-    <a href="#" class="btn">Scrum Master Resume (PDF)</a>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>15+ years in QA Engineering, currently building Cybersecurity Blue Team skills. Volunteered as QA Lead and Scrum Master for SOC-focused non-profit projects.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Incident Response & Log Analysis</li>
+      <li>Splunk, Wazuh, Suricata, Wireshark</li>
+      <li>SIEM & EDR Integration</li>
+      <li>Linux & Windows Monitoring</li>
+      <li>Threat Intel: VirusTotal, URLScan, AbuseIPDB</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>
+      "Sunita is a detail-oriented, driven cybersecurity learner — always committed to excellence."
+      <footer>— LinkedIn Peer Endorsement</footer>
+    </blockquote>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:sunitasharma@example.com">sunitasharma@example.com</a></p>
-    <div class="contact-links">
-      <a href="https://linkedin.com/in/sunitanigam-sharma">LinkedIn</a> |
-      <a href="https://github.com/suneetasharma">GitHub</a>
-    </div>
+    <p>Email: <a href="mailto:sunitanigam@yahoo.com">sunitanigam@yahoo.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sunitanigam-sharma">sunitanigam-sharma</a></p>
+    <p>GitHub: <a href="https://github.com/suneetasharma">@suneetasharma</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sunita Sharma | Built with 💻 and ☕</p>
+    <p>&copy; 2025 Sunita Sharma | Built with 💻 + ☕ | Powered by GitHub Pages</p>
   </footer>
 </body>
 </html>
