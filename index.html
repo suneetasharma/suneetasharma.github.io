@@ -175,6 +175,35 @@
   color: #555;
   text-align: right;
 }
+#contact {
+  background-color: #f3f3f3;
+  padding: 40px 20px;
+  border-top: 2px solid #ddd;
+}
+
+.resume-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.resume-links .btn-secondary {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: fit-content;
+}
+
+.resume-links .btn-secondary:hover {
+  background-color: #512da8;
+}
   </style>
 </head>
 <body>
@@ -384,11 +413,22 @@
 
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sunitanigam@yahoo.com">sunitanigam@yahoo.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sunitanigam-sharma">sunitanigam-sharma</a></p>
-    <p>GitHub: <a href="https://github.com/suneetasharma">@suneetasharma</a></p>
-  </section>
+  <h2>Contact</h2>
+  <p>If you'd like to connect about job opportunities, freelance projects, or collaborations, feel free to reach out!</p>
+
+  <div class="contact-methods">
+    <p><strong>Email:</strong> <a href="mailto:sunitanigam@yahoo.com">sunitanigam@yahoo.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sunitanigam-sharma/" target="_blank">linkedin.com/in/sunitanigam-sharma</a></p>
+    
+    <h3>📄 Download My Resumes</h3>
+    <ul class="resume-links">
+      <li><a href="assets/Sunita_Sharma_Cybersecurity_QA_Resume.pdf" target="_blank" class="btn-secondary">Cybersecurity QA Resume</a></li>
+      <li><a href="assets/Sunita_Sharma_Scrum_Master_Resume.pdf" target="_blank" class="btn-secondary">Scrum Master Resume</a></li>
+      <li><a href="assets/Sunita_Sharma_Security_Analyst_Resume.pdf" target="_blank" class="btn-secondary">Security Analyst Resume</a></li>
+    </ul>
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Sunita Sharma | Built with 💻 + ☕ | Powered by GitHub Pages</p>
