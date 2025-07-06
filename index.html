@@ -209,7 +209,28 @@
 
 .resume-links .btn-secondary:hover {
   background-color: #512da8;
+
+.resume-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
 }
+
+.btn-resume {
+  background-color: #512da8;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #7e57c2;
+}}
   </style>
 </head>
 <body>
@@ -426,14 +447,15 @@
     <p><strong>Email:</strong> <a href="mailto:sunitanigam@yahoo.com">sunitanigam@yahoo.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sunitanigam-sharma/" target="_blank">linkedin.com/in/sunitanigam-sharma</a></p>
     
-    <h3>📄 Download My Resumes</h3>
-    <ul class="resume-links">
-      <li><a href="assets/Sunita_Sharma_Cybersecurity_QA_Resume.pdf" target="_blank" class="btn-secondary">Cybersecurity QA Resume</a></li>
-      <li><a href="assets/Sunita_Sharma_Security_Analyst_Resume.pdf" target="_blank" class="btn-secondary">Security Analyst Resume</a></li>
-    </ul>
+    <section id="resume">
+  <h2>Download My Resume</h2>
+  <div class="resume-buttons">
+    <a href="Sunita_Sharma_Cybersecurity_Resume.pdf" class="btn-resume" target="_blank">Cybersecurity Resume</a>
+    <a href="Sunita_Sharma_QA_Resume.pdf" class="btn-resume" target="_blank">QA/Test Engineer Resume</a>
+    <!-- Optional -->
+    <!-- <a href="Sunita_Sharma_ScrumMaster_Resume.pdf" class="btn-resume" target="_blank">Scrum Master Resume</a> -->
   </div>
 </section>
-
 
   <footer>
     <p>&copy; 2025 Sunita Sharma | Built with 💻 + ☕ | Powered by GitHub Pages</p>
