@@ -137,6 +137,44 @@
   color: #444;
   font-size: 0.95rem;
 }
+/* Testimonials Section */
+#testimonials {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  padding: 24px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  font-style: italic;
+}
+
+.testimonial-card footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: right;
+}
   </style>
 </head>
 <body>
@@ -324,12 +362,26 @@
 </section>
 
   <section id="testimonials">
-    <h2>Testimonials</h2>
-    <blockquote>
-      "Sunita is a detail-oriented, driven cybersecurity learner — always committed to excellence."
-      <footer>— LinkedIn Peer Endorsement</footer>
-    </blockquote>
-  </section>
+  <h2>Testimonials</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p>"Sunita is an exceptional collaborator who consistently delivers high-quality security insights into our QA processes."</p>
+      <footer>— Regenold Christian, Head of Global Enterprise Architecture at Experian</footer>
+    </div>
+    <div class="testimonial-card">
+      <p>"Working with Sunita, I was impressed by her deep technical skills and ability to mentor teams in threat detection."</p>
+      <footer>— Darrell Dwelley, Lead Security Researcher, Systems Engineer Lead at Trustwave</footer>
+    </div>
+    <div class="testimonial-card">
+      <p>"Sunita brought clarity and structure to our incident response initiatives—highly communicative and insightful."</p>
+      <footer>— Eldor Ashurov, Senior Data Engineer/BI Engineer at KeHE Distributors </footer>
+    </div>
+  </div>
+  <p style="font-size: 0.9rem; margin-top: 20px; color: #666;">
+    These testimonials were originally shared on my <a href="https://linkedin.com/in/sunitanigam-sharma" target="_blank">LinkedIn profile</a> and are presented here with proper attribution.
+  </p>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
