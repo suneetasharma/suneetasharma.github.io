@@ -1,5 +1,4 @@
 # suneetasharma.github.io
-Cybersecurity Portfolio - Projects, Labs &amp; Certifications
 # 🛡️ 30-Day SOC Analyst Hands-On Cybersecurity Challenge
 
 ## Table of Contents
@@ -78,8 +77,11 @@ Each folder contains 5 labs organized by theme:
 
 **Sunita Sharma**
 🔐 Cybersecurity QA Engineer & Blue Team Practitioner
+
 📌 Passionate about incident response, log analysis, threat detection, and EDR
+
 🔗 [LinkedIn](https://linkedin.com/in/sunitanigam-sharma)
+
 🌐 [GitHub Portfolio](https://github.com/suneetasharma)
 
 ---
